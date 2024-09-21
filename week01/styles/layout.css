@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.parent{
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Header, Content, Footer */
+    grid-template-columns: 3fr 1fr; /* Main and Aside */
+    height: 100vh;
+}
+
+.header{
+    display: flex;
+    flex-direction: column; /* Stack header title and nav vertically */
+    color: white;
+    background-color: rgb(48, 46, 46);
+    padding: 1rem;
+    grid-column: 1 / -1; /* Spans all columns */
+    text-align: center;
+}
+
+/* Navigation Menu with Flex (inside Header) */
+.nav-bar{
+    display: flex;
+    justify-content: space-around; /* Space between navigation items */
+    background-color: black;
+    padding: 1rem 0;
+    margin-top: 1rem;
+}
+
+.nav-bar a{
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem; /* Spacing for the links */
+    font-size: 1.2rem;
+}
+
+.nav-bar a:hover {
+    text-decoration: underline;
+}
+
+
+/* Main Content Styling */
+.main{
+    background-color: rgb(202, 201, 201);
+    padding-left: 2rem;
+    grid-column: 1 / 2; /* Main content takes the first column */
+    grid-row: 2 / 3; /* Between header and footer */
+}
+
+/* Aside Content Styling */
+.aside{
+    background-color: white;
+    padding-left: 2rem;
+    grid-column: 2 / 3; /* Aside content takes the second column */
+    grid-row: 2 / 3; /* Between header and footer */
+}
+
+/* Footer Styling */
+.footer{
+    color: white;
+    background-color: rgb(37, 37, 37);
+    padding: 2rem;
+    grid-column: 1 / -1; /* Spans all columns */
+}
