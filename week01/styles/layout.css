@@ -1,6 +1,20 @@
+@font-face {
+    font-family: headings;
+    src: url(https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap);
+}
+
 *{
     margin: 0;
     padding: 0;
+    
+}
+
+body {
+    font-family: 'Playwrite DE Grund', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playwrite DE Grund', sans-serif;
 }
 
 .parent{
@@ -15,24 +29,29 @@
     flex-direction: column; /* Stack header title and nav vertically */
     color: white;
     background-color: rgb(48, 46, 46);
-    padding: 1rem;
+    padding: 1rem 0 0 0;
     grid-column: 1 / -1; /* Spans all columns */
-    text-align: center;
+    text-align: left;
+}
+
+.header h1{
+    padding-left: 2rem;
 }
 
 /* Navigation Menu with Flex (inside Header) */
 .nav-bar{
     display: flex;
+    flex: 1 1 100%;
     justify-content: space-around; /* Space between navigation items */
     background-color: black;
-    padding: 1rem 0;
-    margin-top: 1rem;
+    padding: 1rem;
+    margin: 1rem 0 0 0;
+    align-items: center;
 }
 
 .nav-bar a{
     color: white;
     text-decoration: none;
-    padding: 1rem 2rem; /* Spacing for the links */
     font-size: 1.2rem;
 }
 
@@ -63,4 +82,5 @@
     background-color: rgb(37, 37, 37);
     padding: 2rem;
     grid-column: 1 / -1; /* Spans all columns */
+    text-align: center;
 }
