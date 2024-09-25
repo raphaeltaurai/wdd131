@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="styles/base.css">
     <script type="module" src="scripts/getdates.js"></script>
 </head>
-<body>
-    <header>
-        <h1>Header Content</h1>
+<body class="body">
+    <header class="header">
+        <h1>WDD131:  Dynamic Web Fundamentals - Raphael Shawn Taurai</h1>
         <nav class="nav-bar">
             <a href="www.linkedin.com/in/raphaelshawntaurai">LinkedIn</a>
             <a href="https://byui.instructure.com/courses">I-Learing</a>
@@ -23,12 +23,34 @@
     <main>
         <section class="card">
             <h2>About Me</h2>
-
+            <img class="sh-pic" src="images/shawn-pic.jpg" alt="Picture of Raphael Shawn">
+            <p class="about-para">
+                I am Raphael Shawn Taurai, I was born and raised in Zimbabwe. I am currently a student at Midlands State University, in Zimbabwe taking
+                Data Science and Informatics at undergraduate level. I am also an online student, studying for a Bachelors in Science Degree in Software Development.
+                I love programming and learning new things.
+            </p>
+            <h3 class="city">Kwekwe, Zimbabwe</h3>
+            <hr class="line">
+            <div class="city-details">
+                <img  class="zimpic" src="images/zim-flag.png" alt="Picture of Zimbabwe Flag">
+                <p class="caption">Zimbabwe Flag</p>
+                <p class="zim-para">Zimbabwe is a landlocked country in Southern Africa with a map shaped like a tea pot. Zimbabwe is popular for it's 
+                    mineral reserves and tourist destinations. The economy is said to be strong but very unstable at the same time. The climate is the very best
+                    Africa can offer.
+                </p>
+            </div>
         </section>
-        <section class="card">Web Dev Resources</section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul class="resources" >
+                <li><a href="https://www.w3schools.com/">w3schools</a></li>
+                <li><a href="https://developer.mozilla.org/">mdn web docs</a></li>
+            </ul>
+        </section>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <p></p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 </html>
