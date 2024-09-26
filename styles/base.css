@@ -132,7 +132,7 @@ main .card {
 
 .line{
     max-width: 750px;
-    margin: 0 0 15rem 15rem;
+    margin: 0 15rem 0 15rem;
 }
 
 .city-details{
