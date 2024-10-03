@@ -10,10 +10,10 @@
     }
 
     .navigation a {
-        flex: 1;
+        flex: 1 1 100%;
         text-align: center;
-        padding: 1rem;
-        color: #fff;
+        padding: 8px;
+        color: #ffffff;
         /*background-color: #152a88a1; /* Ensure background remains for larger screens */
     }
 

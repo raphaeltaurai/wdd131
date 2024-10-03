@@ -23,7 +23,8 @@ h1 {
 }
 
 h2 {
-    margin: 1rem 0 1rem 4.3rem; /* Retaining your original margin */
+    text-align: center;
+    margin: 1rem 0; 
 }
 .temples-grid figure img{ border-radius: 12px; -webkit-border-radius: 12px; -moz-border-radius: 12px; -ms-border-radius: 12px; -o-border-radius: 12px; }
 
