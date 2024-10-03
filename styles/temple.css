@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Sansita", sans-serif;
+}
+
+header {
+    background-color: #152a88a1;
+    display: grid;
+    grid-gap: 1rem;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 30px #333;
+}
+
+h1 {
+    margin: 2rem;
+    font-size: 2rem;
+}
+
+h2 {
+    margin: 1rem 0 1rem 4.3rem; /* Retaining your original margin */
+}
+.temples-grid figure img{ border-radius: 12px; -webkit-border-radius: 12px; -moz-border-radius: 12px; -ms-border-radius: 12px; -o-border-radius: 12px; }
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: #152a8804;
+    color: #000;
+    cursor: pointer;
+    position: absolute;
+    top: 8%;
+    right: 0;
+}
+
+#menu::before {
+    content: '≡'; /* Hamburger icon */
+}
+
+#menu.show::before {
+    content: "🔽"; /* Changes to dropdown symbol when clicked */
+}
+
+/* Hide the nav by default on small screens */
+.navigation {
+    display: none;
+    flex-direction: column;
+}
+
+/* Restored original nav link styles */
+.navigation a {
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    /*background-color: #152a88; /* Ensure background is visible for the nav links */
+}
+
+nav a:hover {
+    text-decoration: underline double;
+    background-color: #eee;
+    color: #000;
+}
+
+.active {
+    color: yellow;
+}
+
+/* Show the navigation on mobile when .show is added */
+.navigation.show {
+    display: flex;
+}
+
+/* Base styles for mobile screens */
+.temples-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 temple per row on small screens */
+    gap: 20px;
+    padding: 20px;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+figcaption{
+    font-weight: bold;
+}
+
+.footer {
+    color: black;
+    font-weight: bold;
+    background-color: #152a88a1;
+    padding: 2rem;
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+
