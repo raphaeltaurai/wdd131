@@ -1,0 +1,118 @@
+:root {
+    --hdr-footer-clr: rgb(192, 0, 0);
+    --h2-h3-clr: #006400;
+    --trans-heading: rgba(3, 71, 3, 0.39);
+    --background-clr: rgba(199, 223, 223, 0.973);
+    --black: rgb(0, 0, 0);
+    --white: rgb(255, 255, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--hdr-footer-clr);
+    color: var(--white);
+    padding: 1.5rem;
+    text-align: center;
+    border-bottom: 10px solid var(--h2-h3-clr);
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    border-bottom: 5px solid var(--hdr-footer-clr);
+}
+
+.data-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 2rem auto;
+    width: 90%;
+    position: relative;
+}
+
+.about-country,
+.weather {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    color: var(--h2-h3-clr);
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+h2::before {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: var(--h2-h3-clr);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.weather h2::after {
+    content: url('images/weather-icon.png'); /* Replace with the actual weather icon image */
+    display: inline-block;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+
+.row .col {
+    text-align: right;
+    font-weight: bold;
+    flex-basis: 45%;
+}
+
+.row .col2 {
+    text-align: left;
+    margin-left: 10px;
+    flex-basis: 55%;
+}
+
+footer {
+    background-color: var(--hdr-footer-clr);
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    color: var(--white);
+}
+
+@media screen and (min-width: 1160px) {
+    .hero img {
+        width: 1160px;
+        height: auto;
+    }
+
+    .data-section {
+        max-width: 1160px;
+    }
+
+    .about-country,
+    .weather {
+        position: relative;
+        top: 0;
+        width: 45%;
+    }
+}
