@@ -149,6 +149,9 @@ footer{
     -ms-border-radius: 30px ;
     -o-border-radius: 30px ;
   }
-.ard position-right{
-  padding: 0;
-}}
+
+  footer{
+    font-weight: bold;
+    font-size: larger;
+  }
+}
