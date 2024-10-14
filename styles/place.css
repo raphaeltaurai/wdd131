@@ -153,5 +153,7 @@ footer{
   footer{
     font-weight: bold;
     font-size: larger;
+    color: var(--black);
+    background-color: var(--background-clr);
   }
 }
