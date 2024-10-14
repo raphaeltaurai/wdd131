@@ -66,6 +66,7 @@ picture img {
   margin-block: 1rem;
   color: var(--mob-title);
   font-family: var(--font-title);
+  font-weight: bold;
   font-size: xx-large;
   display: flex;
   flex-direction: column;
