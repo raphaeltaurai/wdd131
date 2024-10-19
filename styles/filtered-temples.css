@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #152a88a1;
+    background-color: #08196886;
     display: grid;
     grid-gap: 1rem;
     padding: 20px;
@@ -107,7 +107,7 @@ img {
     flex-direction: column;
 }
 
-/* Restored original nav link styles */
+
 .navigation a {
     display: block;
     color: #000;
