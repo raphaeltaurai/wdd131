@@ -1,0 +1,39 @@
+/* Larger screen styles */
+@media (min-width: 769px) {
+    #menu {
+        display: none; /* Hide hamburger on larger screens */
+    }
+
+    .navigation {
+        display: flex; /* Always show nav on large screens */
+        flex-direction: row;
+    }
+
+    .navigation a {
+        flex: 1 1 100%;
+        text-align: center;
+        padding: 8px;
+        color: #000;
+        /*background-color: #152a88a1; /* Ensure background remains for larger screens */
+    }
+
+    nav a:hover {
+        text-decoration: underline double;
+        background-color: #eee;
+        color: #000;
+    }
+
+    .temples-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 temples per row */
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header h1, a {
+        margin: 0 2rem;
+    }
+}
