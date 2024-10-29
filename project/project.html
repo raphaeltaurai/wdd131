@@ -17,18 +17,55 @@
         <a id="menu" href="#" aria-expanded="false"></a>
         <nav class="navigation">
             <a href="project.html">Home</a>
-            <a href="#Old">Remote</a>
-            <a href="#New">On-Site</a>
-            <a href="#Large">Hybrid</a>
-            <a href="#Small">Part-Time</a>
+            <a href="#Full-Time">Full-Time</a>
+            <a href="#Part-Time">Part-Time</a>
+            <a href="#Onsite">On-Site</a>
+            <a href="#Remote">Remote</a>
+            <a href="#Hybrid">Hybrid</a>
             <a href="aboutUs.html">About Us</a>
         </nav>
     </header>
 <main>
     <h2>Job Postings</h2>
-    <div class="temples-grid">
+    <div class="postings-grid">
         
     </div>
+    <div class="register-form">
+        <form method="get" action="registered.html">
+            <h2>Register for Notifications</h2>
+            <!-- First and Last Name -->
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+            
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+    
+            <!-- Email with filters and guidelines -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required
+                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                   title="Please enter a valid email (e.g., example@mail.com)">
+    
+            <!-- Preferred Type of Employment (Checkboxes) -->
+            <fieldset>
+                <legend>Preferred Type of Employment:</legend>
+                <label><input type="checkbox" name="employmentType" value="Online"> Online</label>
+                <label><input type="checkbox" name="employmentType" value="Hybrid"> Hybrid</label>
+                <label><input type="checkbox" name="employmentType" value="Onsite"> Onsite</label>
+            </fieldset>
+    
+            <!-- Preferred Hours (Select populated by JavaScript) -->
+            <label for="preferredHours">Preferred Hours:</label>
+            <select id="preferredHours" name="preferredHours" required>
+                <option value="" disabled selected>Select Work Hours ...</option>
+                <!-- Options populated dynamically -->
+            </select>
+    
+            <!-- Submit Button -->
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    
 </main>
 <footer class="footer">
     <p></p>
