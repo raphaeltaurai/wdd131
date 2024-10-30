@@ -17,42 +17,42 @@ const jobPostings = [
         location: "Aba, Nigeria",
         type: "hybrid",
         dailyHours: 9,
-        imageUrl: "images/salesrep.webp"
+        imageUrl: "project/images/salesrep.webp"
     },
     {
         jobTitle: "Remote Web Developer",
         location: "Remote",
         type: "remote",
         dailyHours: 8,
-        imageUrl: "images/remote-developer.webp"
+        imageUrl: "project/images/remote-developer.webp"
     },
     {
         jobTitle: "On-site Technician",
         location: "New York, USA",
         type: "onsite",
         dailyHours: 5,
-        imageUrl: "images/technician.webp"
+        imageUrl: "project/images/technician.webp"
     },
     {
         jobTitle: "Child Support Psychologist",
         location: "Harare, Zimbawe",
         type: "onsite",
         dailyHours: 8,
-        imageUrl: "images/psychologist.webp"
+        imageUrl: "project/images/psychologist.webp"
     },
     {
         jobTitle: "Book Keeper",
         location: "Nairobi, Kenya",
         type: "hybrid",
         dailyHours: 4,
-        imageUrl: "images/bookkeeper.webp"
+        imageUrl: "project/images/bookkeeper.webp"
     },
     {
         jobTitle: "Agronomist",
         location: "Mutare, Zimbabwe",
         type: "onsite",
         dailyHours: 5,
-        imageUrl: "images/hot-culture.webp"
+        imageUrl: "project/images/hot-culture.webp"
     },
     // Add more job objects as needed
 ];
