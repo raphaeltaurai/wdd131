@@ -133,7 +133,7 @@ h2 {
 
 /* Footer */
 .footer {
-    color: #001219ff; /* Black text */
+    color: #fff; /* Black text */
     font-weight: bold;
     background-color: #005f73ff; /* Midnight-Green for footer */
     padding: 2rem;

@@ -50,9 +50,9 @@ const jobPostings = [
     {
         jobTitle: "Agronomist",
         location: "Mutare, Zimbabwe",
-        type: "online",
+        type: "onsite",
         dailyHours: 5,
-        imageUrl: "images/.webp"
+        imageUrl: "images/hot-culture.webp"
     },
     // Add more job objects as needed
 ];
