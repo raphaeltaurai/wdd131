@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+        <h1>Thank You for Your Review!</h1>
+    </header>
+    <main>
+        <p id="reviewCount"></p> <!-- Placeholder for review count -->
+        <p>Your review has been successfully submitted.</p>
+        <a href="form.html">Back to Product Review Form</a> <!-- Link back to form -->
+    </main>
+    <footer>
+        <p></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script>
+        window.onload = () => {
+            let reviewCount = localStorage.getItem("reviewCount");
+
+            if (!reviewCount) {
+                reviewCount = 0;
+            }
+            reviewCount++;
+            localStorage.setItem("reviewCount", reviewCount);
+
+            const reviewCountDisplay = document.getElementById("reviewCount");
+            if (reviewCountDisplay) {
+                reviewCountDisplay.textContent = `You have submitted ${reviewCount} reviews.`;
+            }
+        };
+    </script>
+</body>
+</html>
